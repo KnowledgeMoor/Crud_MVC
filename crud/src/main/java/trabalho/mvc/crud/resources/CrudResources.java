@@ -26,7 +26,7 @@ public class CrudResources {
     @RequestMapping("CrudGet")
     public String doGet(Model model) {
         model.addAttribute("cadastros", cadastros);
-        return "lista";
+        return "index";
     }
 
     @GetMapping("/delete/{index}")
